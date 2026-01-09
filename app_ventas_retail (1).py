@@ -2457,7 +2457,7 @@ Estado General: {estado['estado_general']}
 Timestamp: {estado['timestamp']}
 Métricas del Modelo:
 -
-R²: {estado['metricas_actuales'].get('r2', 'N/A')}
+R^2: {estado['metricas_actuales'].get('r2', 'N/A')}
 -
 MAE: {estado['metricas_actuales'].get('mae', 'N/A')}
 -
