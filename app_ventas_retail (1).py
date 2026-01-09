@@ -2724,13 +2724,13 @@ def generar_documentacion_final():
 8. **Monitoreo:** Verificación continua de performance
 9. **Alertas:** Notificaciones automáticas por email
 ## Métricas de Performance Actuales
--**R² Score:** {sistema_ml.metricas_actuales.get('r2', 'N/A')}
+-**R Score:** {sistema_ml.metricas_actuales.get('r2', 'N/A')}
 -**MAE:** ${sistema_ml.metricas_actuales.get('mae', 'N/A')}
 -**MAPE:** {sistema_ml.metricas_actuales.get('mape', 'N/A')}
 -**Accuracy ±10%:** {sistema_ml.metricas_actuales.get('accuracy_10pct', 'N/A')}
 
 ## Thresholds de Calidad
--**R² Mínimo:** {SISTEMA_CONFIG['thresholds']['r2_minimo']}
+-**R^2 Mínimo:** {SISTEMA_CONFIG['thresholds']['r2_minimo']}
 -**MAE Máximo:** ${SISTEMA_CONFIG['thresholds']['mae_maxima']}
 -**Confianza Mínima:** {SISTEMA_CONFIG['thresholds']['confianza_minima']}
 
