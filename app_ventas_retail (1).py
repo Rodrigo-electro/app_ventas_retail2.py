@@ -2699,7 +2699,7 @@ def generar_documentacion_final():
     """
     Genera documentación completa del sistema implementado
     """
-    documentacion = f"""
+    documentacion = f """
 # SISTEMA ML RETAILMAX-DOCUMENTACIÓN DE PRODUCCIÓN
 
 ## Información General
