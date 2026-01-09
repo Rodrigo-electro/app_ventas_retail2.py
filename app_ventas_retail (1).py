@@ -1365,7 +1365,7 @@ La aplicación democratiza el acceso al modelo ML,
 permitiendo que usuarios no técnicos exploren escenarios y tomen decisiones informadas
 basadas en predicciones.
 
-🆘!:
+#🆘!:
 Verifica que todas las librerías estén instaladas correctamente y que el modelo se cargue
 sin errores.
 Streamlit mostrará errores detallados en la interfaz.
