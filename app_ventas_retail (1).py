@@ -1360,7 +1360,7 @@ como archivo principal
 * App desplegada en Streamlit Cloud (URL pública)
 
 ### 1.5.5 Reflexión final
-**¿Cómo mejora esto la toma de decisiones?**
+**Cómo mejora esto la toma de decisiones?**
 La aplicación democratiza el acceso al modelo ML,
 permitiendo que usuarios no técnicos exploren escenarios y tomen decisiones informadas
 basadas en predicciones.
