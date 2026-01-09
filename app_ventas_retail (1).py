@@ -2449,19 +2449,14 @@ class OrquestadorProduccion:
     """
     self.logger.info("📧Enviando resumen diario del sistema")
     resumen = f"""
-RESUMEN DIARIO
--
-SISTEMA ML RETAILMAX
+RESUMEN DIARIO - SISTEMA ML RETAILMAX
 ====================================
 Estado General: {estado['estado_general']}
 Timestamp: {estado['timestamp']}
 Métricas del Modelo:
--
-R^2: {estado['metricas_actuales'].get('r2', 'N/A')}
--
-MAE: {estado['metricas_actuales'].get('mae', 'N/A')}
--
-MAPE: {estado['metricas_actuales'].get('mape', 'N/A')}%
+-R^2: {estado['metricas_actuales'].get('r2', 'N/A')}
+-MAE: {estado['metricas_actuales'].get('mae', 'N/A')}
+-MAPE: {estado['metricas_actuales'].get('mape', 'N/A')}%
 Alertas Activas: {len(estado['alertas_activas'])}
 Sistema funcionando correctamente.
 """
