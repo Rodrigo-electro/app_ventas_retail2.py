@@ -1781,7 +1781,8 @@ def generar_guia_implementacion():
   Genera una guía paso a paso para implementar el dashboard
   """
   guia = """
-📋GUÍA DE IMPLEMENTACIÓN-GOOGLE DATA STUDIO
+#📋
+GUÍA DE IMPLEMENTACIÓN-GOOGLE DATA STUDIO
 ================================================
 PASO 1: PREPARAR DATOS EN GOOGLE SHEETS
 ---------------------------------------
