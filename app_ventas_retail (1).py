@@ -83,9 +83,10 @@ for tienda_id in tiendas:
 """### Paso 1: configuración del entorno"""
 
 # Instala las librerías necesarias
-#!pip install plotly pandas scikit-learn
+# pip install plotly pandas scikit-learn
 
 # Importa las librerías
+import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
@@ -165,6 +166,8 @@ def preprocesar_datos(df):
   """
   print(" 🔄 Iniciando preprocesamiento...")
   # Crear features temporales
+    #LINEA AGREGADA
+  df[CONFIG['date_column']] = pd.to_datetime(df[CONFIG['date_column']], errors='coerce')
   df['año'] = df[CONFIG['date_column']].dt.year
   df['mes'] = df[CONFIG['date_column']].dt.month
   df['semana'] = df[CONFIG['date_column']].dt.isocalendar().week
@@ -312,6 +315,7 @@ metricas_detalladas = generar_metricas_performance(y_test, y_pred)
 print("📊 Métricas calculadas:")
 # Convertir las métricas en un DataFrame para una mejor visualización
 metricas_df = pd.DataFrame(list(metricas_detalladas.items()), columns=['Métrica', 'Valor'])
+# con python en google colab funciona como display, en stream se cambia display por "st.dataframe"
 st.dataframe(metricas_df)
 
 """### 💡 Nota:
@@ -883,7 +887,7 @@ Crea un archivo Python llamado app_ventas_retail.py o un nuevo notebook y descar
 """
 
 # Importaciones necesarias
-#!pip install streamlit
+# !pip install streamlit
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -1350,7 +1354,7 @@ si no tienes, la puedes crear
 app_ventas_retail.py
 como archivo principal
 * Haz clic en “Deploy”
-
+"""
 ### 1.5.4 Entregables
 * aplicación streamlit completamente funcional
 * App desplegada en Streamlit Cloud (URL pública)
