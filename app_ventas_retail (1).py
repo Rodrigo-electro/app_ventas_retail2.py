@@ -1806,9 +1806,7 @@ PASO 2: CREAR DASHBOARD EN DATA STUDIO
 4. Seleccionar cada pestaña como tabla separada
 PASO 3: CONFIGURAR PÁGINA "RESUMEN EJECUTIVO"
 -------------------------------------------
-1. Agregar título: "RetailMax ML Analytics
--
-Dashboard Ejecutivo"
+1. Agregar título: "RetailMax ML Analytics-Dashboard Ejecutivo"
 2. Insertar 3 Scorecards:
 -
 Accuracy del Modelo (accuracy_modelo, formato %)
