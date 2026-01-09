@@ -1820,52 +1820,35 @@ Dimensión: categoria_performance
 -
 Métrica: COUNT(tienda_id)
 -
-Título: "Predicciones
-por Categoría de Performance"
+Título: "Predicciones por Categoría de Performance"
 4. Insertar tabla:
--
-Dimensiones: tienda_id, ventas_predichas, confianza_prediccion
--
-Ordenar por: ventas_predichas DESC
--
-Mostrar: 10 filas
+-Dimensiones: tienda_id, ventas_predichas, confianza_prediccion
+-Ordenar por: ventas_predichas DESC
+-Mostrar: 10 filas
 PASO 4: CONFIGURAR PÁGINA "PERFORMANCE POR TIENDA"
 ----------------------------------------------
 1. Crear nueva página
 2. Agregar gráfico de barras (mapa de calor simulado):
--
-Dimensión: tienda_id
--
-Métrica: cumplimiento_objetivo
--
-Configurar colores condicionales
+-Dimensión: tienda_id
+-Métrica: cumplimiento_objetivo
+-Configurar colores condicionales
 3. Insertar gráfico de dispersión:
--
-Eje X: objetivo_ytd
--
-Eje Y: ventas_ytd
--
-Color: riesgo_nivel
+-Eje X: objetivo_ytd
+-Eje Y: ventas_ytd
+-Color: riesgo_nivel
 4. Agregar gráfico de barras:
--
-Dimensión: riesgo_nivel
--
-Métrica: COUNT(tienda_id)
+-Dimensión: riesgo_nivel
+-Métrica: COUNT(tienda_id)
 PASO 5: CONFIGURAR PÁGINA "ALERTAS Y MONITOREO"
 ---------------------------------------------
 1. Crear nueva página
 2. Insertar tabla de alertas:
--
-Filtrar por: estado = "Activa"
--
-Dimensiones: fecha, tipo_alerta, tienda_id, descripcion, prioridad
--
-Aplicar formato condicional por prioridad
+-Filtrar por: estado = "Activa"
+-Dimensiones: fecha, tipo_alerta, tienda_id, descripcion, prioridad
+-Aplicar formato condicional por prioridad
 3. Agregar gráfico de líneas (simulado con datos históricos):
--
-Dimensión: fecha_actualizacion
--
-Métrica: accuracy_modelo
+-Dimensión: fecha_actualizacion
+-Métrica: accuracy_modelo
 PASO 6: CONFIGURAR FILTROS
 Y CONTROLES
 ------------------------------------
