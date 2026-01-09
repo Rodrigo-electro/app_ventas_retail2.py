@@ -312,7 +312,7 @@ metricas_detalladas = generar_metricas_performance(y_test, y_pred)
 print("📊 Métricas calculadas:")
 # Convertir las métricas en un DataFrame para una mejor visualización
 metricas_df = pd.DataFrame(list(metricas_detalladas.items()), columns=['Métrica', 'Valor'])
-display(metricas_df)
+st.dataframe(metricas_df)
 
 """### 💡 Nota:
 MAPE(Mean Absolute Percentage Error) es especialmente útil para comunicar error a audiencias de negocio porque está en porcentaje.
