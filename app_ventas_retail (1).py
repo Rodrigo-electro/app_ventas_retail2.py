@@ -2793,7 +2793,7 @@ python sistema_ml_retailmax.py
 
 ---
 **Documentación generada automáticamente el {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}**
-"""
+#"""
     # Guardar documentación
     with open('DOCUMENTACION_SISTEMA_ML.md', 'w', encoding='utf-8') as f:
         f.write(documentacion)
