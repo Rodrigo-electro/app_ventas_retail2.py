@@ -83,7 +83,7 @@ for tienda_id in tiendas:
 """### Paso 1: configuración del entorno"""
 
 # Instala las librerías necesarias
-!pip install plotly pandas scikit-learn
+#!pip install plotly pandas scikit-learn
 
 # Importa las librerías
 import pandas as pd
